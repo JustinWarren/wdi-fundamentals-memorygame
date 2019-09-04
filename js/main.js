@@ -13,18 +13,22 @@ function checkForMatch() {
 //Function that stores steps when user flips card
 function flipCard(cardId) {
 	cardsInPlay.push(cards[cardId]);
-	
-	if (cardsInPlay.length === 2) {
 
-	checkForMatch();
-	};
 	console.log("User flipped " + cards[cardId]);
+
+	if (cardsInPlay.length === 2) {
+		checkForMatch();
+	};
+	
 };
 
 flipCard(0);
 flipCard(2);
 
 /*  Note:  I haven't been able to get this..need help!
+
+Praise God!  Solved it!  I needed to actually put console.log("User flipped " + cards[cardId]); 
+before the if statement in the flipCard function
 
 	
 	My console display:
