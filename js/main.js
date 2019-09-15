@@ -65,9 +65,3 @@ function createBoard() {
 
 createBoard();
 
-/*  Note - I think the issue is that in the
-createBoard() function I am creating images
-and images need an src.  However, I used
-images on imgur so its linking to an href! 
-I need to find a way to have my images be hosted
-in the file folder so that an src can be used...i think :) */
